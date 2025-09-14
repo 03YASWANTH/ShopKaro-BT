@@ -49,8 +49,8 @@ Api_Secret =
 
 <h3>Auth</h3>
 <ul>
-  <li><code>POST /api/v1/auth/register</code> → Register a new user</li>
-  <li><code>POST /api/v1/auth/login</code> → Login a user</li>
+  <li><code>POST /api/v1/auth/signin</code> → Register a new user</li>
+  <li><code>POST /api/v1/auth/signup</code> → Login a user</li>
 </ul>
 
 <h3>Products</h3>
@@ -62,11 +62,6 @@ Api_Secret =
   <li><code>DELETE /api/v1/product/:id</code> → Delete product (protected)</li>
 </ul>
 
-<h3>Categories</h3>
-<ul>
-  <li><code>GET /api/v1/category</code> → Fetch all categories</li>
-  <li><code>POST /api/v1/category</code> → Create new category (protected)</li>
-</ul>
 
 <h2>Folder Structure</h2>
 <pre><code>src/
