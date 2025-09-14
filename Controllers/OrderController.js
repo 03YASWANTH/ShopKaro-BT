@@ -59,7 +59,7 @@ const getAllOrders = async (req, res) => {
 // Get user's orders
 const getUserOrders = async (req, res) => {
   try {
-    const orders = await OrderModel.find({ user: req.user.userId }).populate("products.productId", "name price");
+    const orders = await OrderModel.find({ user: req.user.userId }).populate("products.productId", "title price");
     res.json({ success: true, orders });
   } catch (error) {
     console.error(error);

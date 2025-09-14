@@ -7,8 +7,8 @@ const imageUpload = async (req, res, next) => {
       req.Imageurl = ImageUrl;
       return next();
     }
-
-    const file = req.files?.ImageFile || req.files?.ImageUrl;
+    
+    const file = req.files?.image || req.files?.ImageUrl;
     if (!file) {
       return res.status(400).json({ success: false, message: "File not provided" });
     }
